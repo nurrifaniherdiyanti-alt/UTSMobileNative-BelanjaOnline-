@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ShopEasy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorPrimaryVariant">@color/accent_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_green</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/bg_main</item>
+        <item name="colorControlNormal">@color/hint_color</item>
+        <item name="colorControlActivated">@color/accent_blue</item>
+        <!-- Fix spinner popup background -->
+        <item name="android:popupMenuStyle">@style/SpinnerPopup</item>
+        <item name="android:dropDownListViewStyle">@style/SpinnerDropDown</item>
+    </style>
+
+    <style name="SpinnerPopup" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">#FFFFFF</item>
+    </style>
+
+    <style name="SpinnerDropDown" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+</resources>
